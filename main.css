@@ -71,6 +71,14 @@ hr {
     margin-bottom: 16px; 
 }
 
+#theme-icon {
+    color: var(--light-primary); 
+}
+
+#theme-icon.light {
+    color: var(--dark-primary); 
+}
+
 header a, #social a{
     color: var(--light-primary); 
     text-decoration: none;

@@ -30,7 +30,7 @@ Content aside, the principles I'm hoping to follow are:
         <div id="settings">
             <!-- <a href="">About</a>
             <a href="">Work</a> -->
-            <span id="theme">&#x263e;</span>
+            <span id="theme"><i id="theme-icon" class="fas fa-moon light"></i></span>
         </div>
         
     </header>
@@ -85,9 +85,11 @@ Content aside, the principles I'm hoping to follow are:
   </body>
   <script>
       document.getElementById('theme').addEventListener("click", () => {
-        if (document.querySelector("html").classList.contains("light")){document.getElementById("theme").innerHTML =  "&#9728;"; 
-        } else {document.getElementById("theme").innerHTML =  "&#x263e;"; }
-
+        document.getElementById("theme-icon").classList.toggle("fa-moon");
+        document.getElementById("theme-icon").classList.toggle("fa-sun"); 
+        document.getElementById("theme-icon").classList.toggle("light");
+        
+         
         document.querySelector("html").classList.toggle("light"); 
         document.querySelector("header").classList.toggle("light"); 
       }); 
