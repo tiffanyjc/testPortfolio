@@ -102,13 +102,21 @@ header a, #social a{
     display: flex; 
     flex-direction: column;
     width: 50vw; 
-    min-width: 400px; 
+    min-width: 340px; 
     max-width: 700px; 
-
 }
+
+    #content a {
+        text-decoration: underline; 
+        text-decoration-skip: ink; 
+        color: var(--dark-primary);
+        background-color: var(--light-primary); 
+        font-weight: 600; 
+    }
 
     #hello {
         padding-bottom: 8px; 
+        font-style: italic; 
     }
 
     #resume-section {
@@ -136,6 +144,10 @@ footer {
 
 .spacing {
     height: 16px; 
+}
+
+#prof {
+    display: none; 
 }
 
 /* @media only screen and (min-width: 768px) {
