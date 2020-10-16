@@ -1,7 +1,13 @@
+<!-- Just an FYI that this portfolio  is still a work in progress :) 
+Content aside, the principles I'm hoping to follow are: 
+
+1. Accessible - for people using assistive tech, for language learners, and for folks on low-tech devices
+
+2. Enduring - trying to just use common fonts and vanilla HTML / CSS / JS for the most part, so there isn't the need for much upkeep in the future.
+-->
+
 <!doctype html>
-<html>
-
-
+<html class="light">
   <head>
     <title>Tiffany Chen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,42 +18,42 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Tiffany Chen">
 
+    <link href="css/all.css" rel="stylesheet"> 
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <header>
+    <header class="light">
         <div id="nav">
             <a href=""><b>Tiffany Chen</b></a> 
         </div>
         
         <div id="settings">
-            <a href="">About</a>
-            <a href="">Work</a>
-            <span id="theme">&#9728;</span>
+            <!-- <a href="">About</a>
+            <a href="">Work</a> -->
+            <span id="theme">&#x263e;</span>
         </div>
         
     </header>
 
     <img id="prof" src="assets/profile-image.png"> 
 
-    <div id="content">
+    <div id="content" class="light">
 
         <div id="hello">
-            <h2>Hello!!</h2>
-            <p>I’m a designer by practice, illustrator by night, developer by education, and generally just a person trying / exploring how to affect positive social change through the things that I do. </p>
+            <p>Hello!! I’m a designer by practice, illustrator by night, developer by education, and generally just a person hoping to affect positive social change through the things that I do. </p>
         </div>
 
        
         <div id="resume-section">
             <div id="work" class="resume-section">
                 <h2>Work</h2>
-                <p>Currently working on input & accessibility for Windows; exploring how alternative input and multimodality unlocks access for users with disabilities.</p>
-                <p>Previously worked on refining Microsoft's <a href="">Inclusive Design methodology</a>, including reexamining the <a href="">value of personas</a> in the design practice.</p>
+                <p>Currently working on input & accessibility for Windows; exploring how alternative input and multimodality unlock access for users with disabilities.</p>
+                <p>Previously worked on Microsoft's <a href="https://www.microsoft.com/design/inclusive/" target="_blank">Inclusive Design methodology</a>, including reexamining the <a href="https://medium.com/microsoft-design/kill-your-personas-1c332d4908cc" target="_blank">value of personas</a> in the design practice.</p>
                 <div class="spacing"></div>
             
                 <h2>Personal</h2>
-                <p>I've designed and developed <a href="">several</a> <a href="">accessibility</a> plugins to help optimize the way designers check for accessibility. </p>
-                <p>I run a <a href="">small shop </a> that features my explorations in digital and traditional art.</p>
+                <p>I've designed and developed <a href="https://www.figma.com/community/plugin/731310036968334777/A11y---Focus-Orderer" target="_blank">several</a> <a href="https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker" target="_blank">accessibility</a> <a href="https://www.figma.com/community/plugin/731316515732442555/Keyboard-Scrolling" target="_blank">plugins</a> to help optimize the way designers check for accessibility. </p>
+                <p>I run a <a href="https://www.etsy.com/shop/tiffanychenart" target="_blank">small shop </a> that features my explorations in digital and traditional art.</p>
                 <div class="spacing"></div>
             </div>
 
@@ -55,9 +61,9 @@
                 <h2>Speaking</h2>
                 <p>I've guest lectured at Seattle University, Emily Carr, and Brown University.</p>
 
-                <p>I've been a panelist for  <a href="">IBM Accessibility</a>,   <a href="">Seattle Design Festival</a>. and Artefact studio.</p>
+                <p>I've been a panelist for  <a href="https://www.youtube.com/watch?v=a6Y6NGQKfo8" target="_blank">IBM Accessibility</a> and  <a href="https://thinkercyze.com/challenges/06-accessiblesidewalks" target="_blank">Seattle Design Festival</a>.</p>
 
-                <p>I've spoken at the Figma Plugin feature launch and was supposed to speak at CSUN Assistive Technology Conference 2020 (RIP COVID).</p>
+                <p>I demoed at the <a href="https://www.figma.com/blog/behind-the-plugins-tiffany-chen-microsoft/" target="_blank">Figma Plugin launch</a> and had planned to speak at CSUN Assistive Technology 2020 (RIP COVID).</p>
 
             </div>
 
@@ -66,12 +72,12 @@
     
 
     <footer >
-        <div id="social">
+        <div id="social" class="light">
             <hr>
-            <h2>Contact</h2>
-            <a href="">Twitter</a> 
-            <a href="">LinkedIn</a>
-            <a href="">Github</a>
+            <a href="https://twitter.com/itstiffanychen"><i class="fab fa-twitter"></i></a> 
+            <a href="https://www.linkedin.com/in/tiffanyjchen/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tiffanyjc"><i class="fab fa-github"></i></a>
+            <a href="mailto:totiffanychen@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 

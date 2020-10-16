@@ -4,7 +4,7 @@
   }
 
 html {
-    font-size: 14px; 
+    font-size: 16px; 
     font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
     background-color: var(--dark-primary); 
     color: var(--light-primary); 
@@ -24,12 +24,11 @@ html {
     }
 
 body {
-    font-size: 1.2em; 
+    font-size: 1em; 
     font-weight: 300; 
     line-height: 1.5em; 
     margin: 0px;
     margin-bottom: 16px; 
-    /* padding: 8px 16px;  */
 
     min-height: 100vh; 
     height: auto; 
@@ -37,11 +36,13 @@ body {
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 
 h2 {
-    font-size: 1.2em; 
+    font-size: 1em; 
+    line-height: .7em; 
     font-weight: 500;
 }
 
@@ -66,16 +67,33 @@ header.light {
     border-bottom: 1px solid var(--dark-primary); 
 }
 
+hr {
+    margin-bottom: 16px; 
+}
+
 header a, #social a{
-    display: block; 
     color: var(--light-primary); 
     text-decoration: none;
     padding-top: 8px; 
+    padding-right: 8px; 
 }
+
+header.light a:focus, #social.light a:focus, #content.light a:focus {
+    outline-color: var(--dark-primary);
+}
+
+header a:focus, #social a:focus, #content a:focus {
+    outline-color: var(--light-primary);
+    padding: 4px; 
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
 
     #settings span:hover, a:hover {
         cursor: pointer; 
-
         opacity: .6; 
     }
 
@@ -84,8 +102,6 @@ header a, #social a{
         height: 100%; 
         flex-direction: row;
         align-items: center;
-        /* border: 1px solid blue;  */
-        
     }
 
     #settings a, #settings span, #nav a{
@@ -127,10 +143,6 @@ header a, #social a{
         
     }
 
-    #work, #side-projects {
-        padding-right: 64px;
-    }
-
 footer {
     width: calc(100vw - 32px);
  
@@ -150,14 +162,60 @@ footer {
     display: none; 
 }
 
-/* @media only screen and (min-width: 768px) {
-    #resume-section {
-        border: 1px solid blue; 
+@media only screen and (min-width: 768px) {
+
+    header, header.light {
+        border-bottom: none; 
+        position: absolute; 
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: transparent; 
+    }
+
+        #settings a, #settings span, #nav a{
+            padding: 0px; 
+            padding-bottom: 8px; 
+        }
+
+        #settings {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    footer {
+        position: absolute; 
+        bottom: 0px; 
+    }
+
+    body {
+        align-items: center; 
+        justify-content: center;
+
+    }
+
+    #content {
+        margin-top: 0px; 
+    }
+
+    #resume-section {
+        flex-direction: row;
+        justify-content: space-between;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
         
     }
 
-} */
+    #work, #speaking {
+        width: 48%; 
+    }
+
+    header a, #social a{
+        display: block; 
+        margin-bottom: 0px; 
+    }
+
+    hr {
+        display: none;
+    }
+
+}
