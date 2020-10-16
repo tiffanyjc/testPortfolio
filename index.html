@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tiffany Chen</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+        <div id="nav">
+            <a href=""><b>Tiffany Chen</b></a> 
+            <a href="">About</a>
+            <a href="">Work</a>
+        </div>
+        
+        <div id="settings">
+            <span id="theme">&#9728;</span>
+        </div>
+        
+    </header>
+
+    <div id="content">
+
+        <div id="hello">
+            <h2>Hello!</h2>
+            <p>I’m a designer by practice, illustrator by night, developer by education, and generally just a person trying / exploring how to affect positive social change through the things that I do. </p>
+        </div>
+
+       
+        <div id="resume-section">
+            <div id="work" class="resume-section">
+                <h2>Work</h2>
+                <p>Input & Accessibility at Microsoft</p>
+                <p>Inclusive Design at Microsoft</p>
+                <div class="spacing"></div>
+            
+                <h2>Personal</h2>
+                <p>Figma accessibility plugins</p>
+                <p>Digital illustrations</p>
+                <div class="spacing"></div>
+            </div>
+
+            <div id="speaking" class="resume-section">
+                <h2>Speaking</h2>
+                <p>Guest lecturer at</p>
+                <p>Brown University</p>
+                <p>Emily Carr University</p>
+                <p>Seattle University</p>
+                <p>Seattle Design Festival Thinkercyze</p>
+                <p>IBM Accessibility 101</p>
+                <p>Artefact: The Responsibility of Design</p>
+                <p>CSUN Assistive Technology</p>
+                <p>Figma Plugins Beta launch</p>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <footer >
+        <div id="social">
+            <a href="">Twitter</a> 
+            <a href="">LinkedIn</a>
+            <a href="">Github</a>
+        </div>
+    </footer>
+
+
+  </body>
+  <script>
+      document.getElementById('theme').addEventListener("click", () => {
+        if (document.querySelector("html").classList.contains("light")){document.getElementById("theme").innerHTML =  "&#9728;"; 
+        } else {document.getElementById("theme").innerHTML =  "&#x263e;"; }
+
+        document.querySelector("html").classList.toggle("light"); 
+      }); 
+  </script>
+  
+</html>

@@ -1,0 +1,131 @@
+:root {
+    --dark-primary: #181818; 
+    --light-primary: #efefef; 
+  }
+
+html {
+    font-size: 12pt;
+    font-weight: 300; 
+    line-height: 130%; 
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    background-color: var(--dark-primary); 
+    color: var(--light-primary); 
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+    html.light {
+        background-color: var(--light-primary) !important; 
+        color: var(--dark-primary) !important; 
+    }
+
+    html.light a {
+        color: var(--dark-primary) !important; 
+    }
+
+body {
+    margin: 0px;
+    padding: 8px 0px; 
+
+    min-height: 100vh; 
+    height: auto; 
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center; */
+
+}
+
+
+h2 {
+    font-size: 1.2em; 
+    font-weight: 500;
+}
+
+header a, #social a, #settings a{
+    display: block; 
+    color: var(--light-primary); 
+    text-decoration: none;
+    padding-top: 8px; 
+}
+
+
+#settings span:hover {
+    cursor: pointer; 
+}
+
+header {
+    /* position: absolute; */
+    /* left: 16px; 
+    top: 16px;  */
+    width: calc(100vw - 32px);
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#content {
+    /* grid-row-start: 3; 
+    grid-column-start: 4;
+    grid-column-end: span 4;
+    align-content: center;
+    justify-content: center; */
+    padding: 0px 16px;        
+    display: flex; 
+    flex-direction: column;
+    max-width: 600px; 
+}
+
+    #hello {
+        /* grid-column-start: 1;
+        grid-column-end: span 4; */
+        padding-bottom: 8px; 
+    }
+
+    #resume-section {
+        width: 100%; 
+        /* display: grid;  */
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    #work, #side-projects {
+        /* grid-column-start: 1; 
+        grid-column-end: span 2;  */
+        /* min-width: 305px; */
+        padding-right: 64px;
+    }
+
+    #speaking {
+        /* grid-column-start: 3; 
+        grid-column-end: span 2;  */
+    
+    }
+
+footer {
+    /* position: absolute;
+    left: 16px; 
+    bottom: 16px;  */
+    width: calc(100vw - 32px);
+ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.spacing {
+    height: 16px; 
+}
