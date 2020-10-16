@@ -1,13 +1,23 @@
 <!doctype html>
 <html>
+
+
   <head>
     <title>Tiffany Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Tiffany Chen">
+    <meta name="description" content="Tiffany's work-in-progress portfolio">
+    <meta charset="utf-8">
+    <!-- <meta property="og:url" content="http://tiffanyc.cc"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tiffany Chen">
+
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <header>
         <div id="nav">
-            <a href=""><b>Tiffany Chen</b></a> 
+            <a href="">Tiffany Chen</a> 
         </div>
         
         <div id="settings">
@@ -59,6 +69,7 @@
 
     <footer >
         <div id="social">
+            <h2>Contact</h2>
             <a href="">Twitter</a> 
             <a href="">LinkedIn</a>
             <a href="">Github</a>
@@ -73,6 +84,7 @@
         } else {document.getElementById("theme").innerHTML =  "&#x263e;"; }
 
         document.querySelector("html").classList.toggle("light"); 
+        document.querySelector("header").classList.toggle("light"); 
       }); 
   </script>
   
